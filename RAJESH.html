@@ -1,0 +1,104 @@
+<div class="header">
+  <h2>EDUCATION COMPANY</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Education Books</h2>
+      <video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+<p>
+Video courtesy of 
+<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+</p>
+      <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research. Education frequently takes place under the guidance of educators, however learners can also educate themselves</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+<p> If you learn more knowledge fill the application form below link </p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>In our company, the Education app also provides like 3D videos to learn and extra caricular activites</p>
+</div>
+<html>
+<head>
+<title>registration form validation</title>
+</head>
+<body>
+<script>
+function show()
+{
+var frm=document.getElementById("frm1");
+var name=frm.elements[0].value;
+var password=frm.elements[1].value;
+ var email=frm.elements[2].value;
+var number=frm.elements[3].value;
+
+if((name=="")&&(name<6))
+{
+alert("enter valid name and should have minimum of 6 characters");
+
+return false;
+}
+
+if((password=="")&&(password.length<6))
+{
+alert("This field should not be left empty and should have minimum of 6 characters");
+
+return false;
+}
+var re1 = /^([a-zA-Z0-9@*#]{8,15})$/;
+if(!re1.test(password))
+       {
+alert("invalid password");
+return false;
+}
+if(email.length==0)
+{
+alert("Please enter a valid user name");
+
+return false;
+}
+var re2=/^\w+([-.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+if(!re2.test(email))
+{
+alert("Invalid username");
+return false;
+}
+if(number=="")
+{
+alert("please enter phone number");
+
+return false;
+}
+var re3=/^\d\d\d\d\d\d\d\d\d\d/;
+if(!re3.test(number))
+{
+alert("please enter a valid phone number");
+return false;
+}
+
+}
+</script>
+
+<h1>registration form</h1>
+<form id="frm1" name="form" onSubmit="show()">
+name:<input type="text" name="login" value=""><br><br>
+password:<input type="text" name="login" value=""><br><br>
+email-id:<input type="email" name="email" value=""><br><br>
+phonenumber:<input type="text" name="phoneno" value=""><br><br><br>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="reset" value="reset">
+ </form>
+ </body>
+</html>
